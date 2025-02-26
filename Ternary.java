@@ -12,9 +12,5 @@ public class Ternary {
         k = i < 0 ? -i : i; // get absolute value of i
         System.out.print("Absolute value of ");
         System.out.println(i + " is " + k);
-
-        //This!
-
-
     }
 }
