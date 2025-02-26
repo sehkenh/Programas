@@ -13,5 +13,8 @@ public class Ternary {
         System.out.print("Absolute value of ");
         System.out.println(i + " is " + k);
 
+        //This!
+
+
     }
 }
