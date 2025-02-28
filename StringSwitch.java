@@ -21,3 +21,22 @@ public class StringSwitch {
         }
     }
 }
+/*
+
+    Nested Switch Statements
+
+    switch(count){
+    case 1:
+        switch(target){
+            case 0:
+                System.out.println("target is zero");
+                break;
+            case 1:                                           -no conflicts with outer case 1
+                System.out.println("target is one");
+                break;
+        }
+    break;
+    case 2: ...
+    }
+
+ */
