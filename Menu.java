@@ -12,7 +12,7 @@ public class Menu {
                 System.out.println("   4. do-while");
                 System.out.println("   5. for\n");
                 System.out.println("Choose one:");
-                choice = (char) System.in.read();
+                choice = (char) System.in.read(); //Java's console I/O methods won't be discussed in detail until Chapter 13(System.in.read())
             } while( choice < '1' || choice > '5');
 
             System.out.println("\n");
