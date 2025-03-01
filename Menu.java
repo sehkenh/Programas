@@ -1,7 +1,7 @@
 // Using a do-while to process a menu selection
 public class Menu {
     public static void main(String[] args)
-        throws java.io.IOException {
+        throws java.io.IOException { //Because System.in.read() is being used, he program must specify the throws java... clause. This line is necessary to handle input errors. It's part of Java's exception handling features, which are discussed in Chapter 10.
             char choice;
 
             do{
