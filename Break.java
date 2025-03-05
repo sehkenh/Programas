@@ -16,3 +16,4 @@ public class Break {
         }
     }
 }
+//Even with warnings the code above will compile
