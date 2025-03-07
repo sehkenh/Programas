@@ -8,7 +8,7 @@ class Box6{
     double height;
     double depth;
 
-    Box6(){
+    Box6(){//constructor
         System.out.println("Creating Box...");
         width = 10;
         height = 10;

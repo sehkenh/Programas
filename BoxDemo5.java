@@ -5,7 +5,7 @@ class Box5 {
     double height;
     double depth;
 
-    double volume(){
+    double volume(){//Method
         return width*height*depth;
     }
 
