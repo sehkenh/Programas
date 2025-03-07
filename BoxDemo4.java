@@ -13,8 +13,8 @@ public class BoxDemo4 {
         Box4 mybox1 = new Box4();
 
         mybox1.width = 10;
-        mybox1.height = 10;
-        mybox1.depth = 10;
+        mybox1.height = 20;
+        mybox1.depth = 15;
 
         vol= mybox1.volume();
         System.out.println(vol);
