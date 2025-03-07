@@ -20,3 +20,12 @@ public class BoxDemo4 {
         System.out.println(vol);
     }
 }
+/*
+
+    The preceding program can be written a bit more efficiently because
+    there is actually no need for the vol variable. The call to volume()
+    could have been used in println() statement directly, as shown here:
+
+    System.out.println("Volume is " + mybox1.volume())
+
+*/
