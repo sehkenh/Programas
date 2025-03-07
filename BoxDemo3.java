@@ -1,12 +1,12 @@
 //This program includes a method inside the box class.
 
-class Box3{
+class Box3{ //Main class
     double width;
     double height;
     double depth;
 
-    //Display volume of the box
-    void volume(){
+    //Display volume of the box. This is the method within the main class Box3
+    void volume(){ //Actually, the method is like "main", in others programming languages is called function.
         System.out.print("Volume is ");
         System.out.println(width*height*depth);
     }
