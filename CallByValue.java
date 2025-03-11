@@ -18,4 +18,4 @@ public class CallByValue {
 
     }
 }
-//Primitives type to a method
+//Primitives types to a method
