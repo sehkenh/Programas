@@ -1,6 +1,6 @@
 /*
 
-    This program demonstrate the diffeerence between
+    This program demonstrate the difference between
     public and private.
 
  */
