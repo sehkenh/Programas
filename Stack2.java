@@ -32,8 +32,8 @@ class TestStack2 {
         for (int i = 0; i < 10; i++) mystack1.push(i);
         for (int i = 0; i < 20; i++) mystack2.push(i);
 
-        System.out.println("Popping elements from mystack1" + mystack1.pop());
-        System.out.println("Popping elements from mystack2" + mystack2.pop());
+        System.out.println("Popping elements from mystack1 " + mystack1.pop());
+        System.out.println("Popping elements from mystack2 " + mystack2.pop());
 
 //        mystack1.tos =-2;
 //        mystack2.stck[3] = 100;
