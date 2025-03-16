@@ -15,7 +15,7 @@ class Outer2 {
     int y = 10; //y is local to Inner
 
     void display () {
-        System.out.println("display: outer_x: " + outer_x2);//Here void display does not have access to the outer class
+//        System.out.println("display: outer_x: " + outer_x2);//Here void display does not have access to the outer class
     }
 
     void showy() {
