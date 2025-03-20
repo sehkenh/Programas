@@ -8,7 +8,7 @@ class A2{
     int i; //default access
     private int j; //private to A
 
-    void seti(int x, int y){
+    void setij(int x, int y){
         i = x;
         j = y;
     }
@@ -24,5 +24,12 @@ class B2 extends A2{
 }
 
 public class Access {
-    public static void main(String[] args) {}
+    public static void main(String[] args) {
+        B2 subOb = new B2();
+
+        subOb.setij(10, 20);
+
+        subOb.sum();
+        System.out.println(subOb.total);
+    }
 }
