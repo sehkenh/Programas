@@ -6,7 +6,7 @@ public class RefDemo {
 
         vol = weightbox.volume();
         System.out.println(vol);
-        System.out.println(weightbox.weight());
+//        System.out.println(weightbox.weight());
         System.out.println();
 
         //Assign BoxWeight reference to Box reference
