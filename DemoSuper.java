@@ -102,3 +102,9 @@ public class DemoSuper {
         System.out.println();
     }
 }
+
+/*
+
+    super() must always be the first statement executed inside a subclass constructor. Like this program in line 47.
+
+ */
