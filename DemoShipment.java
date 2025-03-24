@@ -127,3 +127,4 @@ public class DemoShipment {
         System.out.println();
     }
 }
+//Using separate files is the norm when using class hierarchy
