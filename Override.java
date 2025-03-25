@@ -36,3 +36,24 @@ public class Override {
         subOb.show(); // this call show() in B5.
     }
 }
+
+/*
+
+    If you wish to access the superclass version of an
+    overridden method, you can do so by using super.
+
+
+
+ */
+
+//class B5 extends A5 {
+//    int k;
+//    B5(int a, int b, int c){
+//        super(a, b);
+//        k = c;
+//    }
+//    void show(){
+//        super.show(); // This calls A's show
+//        System.out.println("k = " + k);
+//    }
+//}
