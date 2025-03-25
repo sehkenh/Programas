@@ -37,3 +37,13 @@ public class Dispatch {
         r.callme();
     }
 }
+
+/*
+
+    Dynamic, run-time polymorphism is one of the most powerful mechanisms that object-oriented
+    design brings to bear on code reuse and robustness. The ability of existing code libraries
+    to call methods on instances of new classes without recompiling without maintaining a clean
+    abstract interface is a profoundly powerful tool.
+
+ */
+
