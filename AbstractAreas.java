@@ -61,3 +61,4 @@ public class AbstractAreas {
    type Figure, since it is now abstract. And all subclasses of Figure must override area().
 
  */
+
