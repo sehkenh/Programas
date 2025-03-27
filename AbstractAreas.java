@@ -54,3 +54,10 @@ public class AbstractAreas {
 //        System.out.println(figref.area());
     }
 }
+
+/*
+
+   As the comment inside main() indicates, it is no longer possible to declare objects of
+   type Figure, since it is now abstract. And all subclasses of Figure must override area().
+
+ */
