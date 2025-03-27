@@ -10,17 +10,17 @@ abstract class A8 {
     }
 }
 
-class B8 extends A8 {
-    void callme() {
-        System.out.println("B's implementation pf callme");
-    }
-}
-
-public class AbstractDemo {
-    public static void main(String[] args) {
-        B8 b = new B8();
-
-        b.callme();
-        b.callmetoo();
-    }
-}
+//class B8 extends A8 {
+//    void callme() {
+//        System.out.println("B's implementation pf callme");
+//    }
+//}
+//
+//public class AbstractDemo {
+//    public static void main(String[] args) {
+//        B8 b = new B8();
+//
+//        b.callme();
+//        b.callmetoo();
+//    }
+//}

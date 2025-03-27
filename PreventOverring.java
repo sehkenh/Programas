@@ -4,11 +4,11 @@ class A9 {
     }
 }
 
-class B8 extends A9 {
-    void meth(){//ERROR!
-        System.out.println("illegal");
-    }
-}
+//class B8 extends A9 {
+//    void meth(){//ERROR!
+//        System.out.println("illegal");
+//    }
+//}
 
 public class PreventOverring {
 }
