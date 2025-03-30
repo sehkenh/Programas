@@ -1,0 +1,50 @@
+As a general rule, methods in interfaces are declared without any body. In practice, this
+means that you can define interfaces that do not make assumptions about how they are implemented.
+Once it is defined, any number of classes can implement an interface. Also one class can implement
+any number of interfaces.
+
+En resumen. Se hacen los métodos dentro de las interfaces sin body(es una suerte de clase), una vez
+creada cualquier cantidad de clases pueden usar la interfaz, así como una clase puede implementar
+ilimitadas interfaces.
+
+Para implementar la interfaz, se deben usar todos los métodos de la interfaz en la clase.
+
+one interface, multiple methods. - Polymorphism
+
+They disconnect the definition of a method or set of methods from the inheritance hierarchy. Since Interfaces
+are in a different hierarchy from classes, it is possible for classes that are unrelated in terms of the class
+hierarchy to implement the same interface. This is where the real power of interfaces is realized.
+
+Recordar diferencia entre definir una interface e implementar una interface.
+
+##Defining an Interface##
+
+access interface name {
+    return-type method-name1(parameter-list);
+
+    type final-varname1 = value;
+    ...
+
+    }
+
+Si no se define el acceso, entonces se define default, y sólo está disponible para otros miembros
+del package el cual fue declarado. Cuando es declarado public, interface can be used outside its package.
+En este caso debe ser la única interfaz declarada como public en el archivo y el archivo debe tener el mismo
+nombre de la interface. name es el nombre de la interface. Note que los methods no tienen body. They
+are essentially, abstract methods.
+
+Las clases que invocan a la interface deben hacer uso de todos los methods contenidos en la interface.
+
+En JDK 8 en adelante, se cambió la forma de implementar las interfaces, que hasta ahora eran del tipo
+sin body. En JDK8 es posible añadir un default implementation to an interface method. Se añadió
+un static interface methods, y en JDK 9 se puede hacer uso de private methods en las interfaces.
+Ahora es posible que tengan cierto comportamiento.
+
+Variables pueden ser declaradas dentro de las interfaces, son static o final, lo que implica
+que no pueden ser cambiadas por la clase que los implementa. Deben ser inicializadas.
+
+luego:
+
+interface Callback {
+    void callback(int param);
+}
