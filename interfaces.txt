@@ -122,4 +122,44 @@ callback called with 42
 Another version of callback
 p squared is 1764
 
+##Partial Implementations##
+The class that do the incomplete implementation of the interface must be declared as abstract.
 
+Then:
+
+abstract class Incomplete implements Callback {
+    int a,b;
+
+    void show() {
+        System.out.println(a + " " + b);
+    }
+}
+
+##Nested Interface##
+
+class A {
+    public interface NestedIF {
+        boolean isNotNegative(int x);
+    }
+}
+
+// B implements the nested interface.
+
+class B implements A.NestedIF {
+    public boolean isNotNegative(int x) {
+        return x < 0 ? false: true;
+    }
+}
+
+class NestedIFDemo {
+    public static void main(String[] args) {
+
+        // use a nested interface reference
+        A.NestedIF nif = new B();
+
+        if(nif.isNotNegative(10))
+            System.out.println("10 is not negative");
+        if(nif.isNotNegative(-12))
+            System.out.println("This won't be displayed");
+    }
+}
