@@ -48,3 +48,78 @@ luego:
 interface Callback {
     void callback(int param);
 }
+
+##Implementing Interfaces##
+
+Una vez definida una interface, puede ser implementada por una o más clases. Para implementar una
+interface, se debe incluir la cláusula implements, y después los métodos requeridos por la interface.
+
+class class-name [extends superclass] [implements interface]
+    //class body
+
+Si una clase implementa más de una interface, estas se separan por coma.
+Los methods deben ser public al ser implementados por la interface.
+
+class Client implements Callback {
+    //Implements Callback's interface
+    public void callback(int p) {
+        System.out.println("callback called with " + p);
+    }
+}
+
+Es común que al implementar las clases también se hagan methods propios de la clase en los programas.
+
+class Client implements Callback {
+    //Implements Callback's interface
+    public void callback(int p) {
+        System.out.println("callback called with " + p);
+    }
+
+    void ninIfaceMeth() {
+        System.out.println("Classes that implement interfaces " + "may also define other members, too.");
+    }
+}
+
+##Accessing Implementations through interface references##
+
+class TestIface {
+    public static void main(String[] args){
+        Callback c = new Client();
+        c.callback(42)
+    }
+}
+
+Notice that variable c is declared to be of the interface type Callback, yet it was assigned an instance of Client.
+Although c can be used to access the callback() method, it cannot access any other members of the Client class. Thus,
+c could not be used to access nonIfaceMeth() since it is defined by Client but not Callback.
+
+//Another implementation of Callback.
+class AnotherClient implements Callback {
+    //Implement Callback's interface
+    public void callback(int p) {
+        System.out.println("Another version of callback"):}
+        System.out.println("p squared is " + (p*p));
+    }
+}
+
+Now, trying the following class:
+
+class TestIface2 {
+    public static void main (String[] args) {
+        Callback c = new Client();
+        AnotherClient ob = new AnotherClient();
+
+        c.callback(42);
+
+        c = ob; //c refers to AnotherClient object
+        c.callback(42); //Es como si dijera ob.callback(42)
+    }
+}
+
+The output:
+
+callback called with 42
+Another version of callback
+p squared is 1764
+
+
