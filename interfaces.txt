@@ -163,3 +163,47 @@ class NestedIFDemo {
             System.out.println("This won't be displayed");
     }
 }
+
+##Default Interface Methods##
+
+By use of a default method, it is possible fot an interface method to provide a body, rather than being abstract.
+The default method was also referred to as an extension method, and you will likely see both terms used.
+
+If a mew method were added to a popular, widely used interface, then the addition of that method would break existing
+code because no implementation would be found for that new method. The default method solve this problem by
+supplying an implementation that will be used if no other implementation is explicitly provided. The addition of
+a default method will not cause preexisting code to break.
+
+##Default Method Fundamentals##
+
+public interface MyIF {
+ int getNumber();
+
+ default String getString() {
+    return "Default String";
+    }
+}
+
+It is not necessary for an implementing class to override the method in the interface.
+Then:
+
+class MyIFImp implements MyIF {
+    public int getNumber() {
+        return 100;
+    }
+}
+
+The following code creates an instance of MyIFImp and uses it to call both getNumber() and getString():
+
+class DefaultMethodDemo {
+    MyIFImp obj = new MyIFImp();
+
+    System.out.println(obj.getNumber());
+
+    System.out.println(obj.getString());
+}
+
+The output is shown here:
+100
+Default String
+
