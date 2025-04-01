@@ -3,13 +3,13 @@ class A3{
     int i;
 }
 
-//Create a subclass by extending class A.
+//Create a subclass by extending class interfaceextend.A.
 class B3 extends A3{
-    int i;//This i hides the i in A
+    int i;//This i hides the i in interfaceextend.A
 
     B3(int a, int b){
-        super.i = a; //i in A
-        i = b; // i in B
+        super.i = a; //i in interfaceextend.A
+        i = b; // i in interfaceextend.B
     }
 
     void show(){

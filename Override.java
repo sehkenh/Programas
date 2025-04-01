@@ -53,7 +53,7 @@ public class Override {
 //        k = c;
 //    }
 //    void show(){
-//        super.show(); // This calls A's show
+//        super.show(); // This calls interfaceextend.A's show
 //        System.out.println("k = " + k);
 //    }
 //}

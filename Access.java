@@ -6,7 +6,7 @@
  */
 class A2{
     int i; //default access
-    private int j; //private to A
+    private int j; //private to interfaceextend.A
 
     void setij(int x, int y){
         i = x;
@@ -14,7 +14,7 @@ class A2{
     }
 }
 
-//A's j is not accessible here.
+//interfaceextend.A's j is not accessible here.
 class B2 extends A2{
     int total;
 

@@ -1,4 +1,4 @@
-// A simple demonstration of abstract.
+// interfaceextend.A simple demonstration of abstract.
 
 abstract class A8 {
     abstract void callme();
@@ -12,7 +12,7 @@ abstract class A8 {
 
 //class B8 extends A8 {
 //    void callme() {
-//        System.out.println("B's implementation pf callme");
+//        System.out.println("interfaceextend.B's implementation pf callme");
 //    }
 //}
 //

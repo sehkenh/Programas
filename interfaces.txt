@@ -137,15 +137,15 @@ abstract class Incomplete implements Callback {
 
 ##Nested Interface##
 
-class A {
+class interfaceextend.A {
     public interface NestedIF {
         boolean isNotNegative(int x);
     }
 }
 
-// B implements the nested interface.
+// interfaceextend.B implements the nested interface.
 
-class B implements A.NestedIF {
+class interfaceextend.B implements interfaceextend.A.NestedIF {
     public boolean isNotNegative(int x) {
         return x < 0 ? false: true;
     }
@@ -155,7 +155,7 @@ class NestedIFDemo {
     public static void main(String[] args) {
 
         // use a nested interface reference
-        A.NestedIF nif = new B();
+        interfaceextend.A.NestedIF nif = new interfaceextend.B();
 
         if(nif.isNotNegative(10))
             System.out.println("10 is not negative");

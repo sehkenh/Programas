@@ -1,4 +1,4 @@
-// A simple example of recursion.
+// interfaceextend.A simple example of recursion.
 class Factorial{
     int fact(int n){
         int result;

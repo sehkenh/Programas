@@ -1,4 +1,4 @@
-//A complete implementation of BoxWeight
+//interfaceextend.A complete implementation of BoxWeight
 
 
 class Box11 {

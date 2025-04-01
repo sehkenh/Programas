@@ -1,6 +1,6 @@
 /*
 
-    A program that uses the Box class.
+    interfaceextend.A program that uses the Box class.
 
     Call this file BoxDemo.java
 

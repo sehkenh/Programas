@@ -11,7 +11,7 @@ class SecondDerivedClass extends MyClass {
     int y;
 }
 public class LocalVariableTypeInferenceandInheritance {
-    //Return some type of Myclass object.
+    //Return some type of interfaceextend.Myclass object.
     static MyClass getObj(int which) {
         switch (which) {
             case 0: return new MyClass();
