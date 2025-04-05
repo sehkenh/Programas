@@ -19,3 +19,15 @@ class HandleError {
     }
 }
 //Wow!
+
+/*
+
+    catch (ArithmeticException e) {
+        System.out.println("Exception: " + e);
+        a = 0; //set ato zero and continue
+    }
+
+    The ability to display a description of an exception is valuable in other circumstances
+    -particularly when you are experimenting with exceptions or when you are debugging.
+
+ */
