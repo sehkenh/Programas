@@ -1,0 +1,18 @@
+Program statements that you want to monitor for exceptions are contained within a "try" block.
+If an exception occurs within the try block, it is thrown. Your code can catch this exception
+(using "catch") and handle it in some rational manner. System-generated exceptions are
+automatically thrown by the java run-time system. To manually throw an exception, use the
+keyword "throw". Any exception that is thrown out of a method must be specified as such by
+"throws" clause. Any code that absolutely must be executed after a try block completes is
+put in a "finally" block.
+
+class Exc1 {
+    static void subroutine() {
+        int d = 0;
+        int a = 10 / d;
+    }
+    public static void main(String[] args) {
+        Exc1.subroutine();
+    }
+}
+
