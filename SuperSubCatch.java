@@ -21,3 +21,11 @@ class SuperSubCatch {
         }
     }
 }
+
+/*
+
+    The first catch statement will handle all Exception-based errors, including
+    ArithmeticException. This means that the second catch statement will never execute.
+    To fix the problem, reverse the order of the catch statements.
+
+ */
